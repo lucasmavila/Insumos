@@ -212,7 +212,7 @@ nav.show .icon-close {
 
 /*==================== BASE FOOTER ============================= */
 footer {
-  background: var(--base-color);
+  background: #30313c;
 }
 
 footer.section {
@@ -508,7 +508,25 @@ footer .social a:hover {
   color: var(--base-color);
 }
 
-/*==================== RESPONSIVE ============================= */
+/*============ SIMULATOR ============ */
+
+.page-simulator header h2 {
+  font-size: var(--title-font-size);
+  color: whitesmoke;
+  background-color: var(--base-color);
+  padding: 3rem 0;
+  margin-top: var(--header-height);
+}
+
+.page-simulator header p {
+  padding: 3rem 1.5rem;
+}
+
+iframe {
+  width: 80vw;
+  height: 100vh;
+}
+/*============ RESPONSIVE ============ */
 
 /*extra large devices: 1200>*/
 
