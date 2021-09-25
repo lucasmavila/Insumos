@@ -1,0 +1,422 @@
+img {
+  width: 20rem;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+/*===== INDEX #LAYOUT ===== */
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  padding: calc(5rem + var(--header-height)) 0;
+}
+
+.section .title {
+  margin-bottom: 1rem;
+}
+
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+.section header {
+  margin-bottom: 4rem;
+}
+
+.section header strong {
+  color: var(--base-color);
+}
+
+/*===== INDEX #HOME ======*/
+
+#home {
+  overflow: hidden;
+}
+#home .container {
+  margin: 0;
+}
+
+#home .image {
+  position: relative;
+}
+
+#home .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -17%;
+  left: 10%;
+  z-index: 0;
+}
+
+#home .image img {
+  position: relative;
+}
+
+#home .image img,
+#home .image::before {
+  border-radius: 0.25rem;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text h2 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+}
+
+/*===== INDEX #ABOUT===== */
+
+#about {
+  background: white;
+}
+
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -16%;
+  left: -20%;
+  z-index: 0;
+}
+
+#about .image img {
+  position: relative;
+  width: 23.625rem;
+  height: 15.625rem;
+}
+
+#about .image img,
+#about .image::before {
+  border-radius: 0.25rem;
+}
+
+#about .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*===== INDEX-SERVICES ===== */
+
+.cards.grid {
+  gap: 2.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background-color: var(--base-color);
+}
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color);
+}
+
+.card:hover i {
+  color: whitesmoke;
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card:hover .title {
+  color: whitesmoke;
+}
+
+.card:hover p {
+  color: whitesmoke;
+}
+
+/*===== HOME-TESTIMONIALS ===== */
+
+#testimonials {
+  background: white;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+  position: absolute;
+  top: -0.5rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+.swiper-slide {
+  /* width: 600 px; */
+  padding: 4rem 1rem;
+  height: auto;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--base-color);
+}
+
+/*====== CONTACT ===== */
+
+#contact .grid {
+  gap: 4 rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
+}
+
+/*============ RESPONSIVE ============ */
+
+/*extra large devices: 1200>*/
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    padding: 10rem 0;
+  }
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  #home .image {
+    order: 1;
+  }
+  #home .image img,
+  #about .image img {
+    width: 40rem;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+
+  #services .container {
+    margin: 0 auto;
+  }
+
+  card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+}
+
+/*large devices: 1023>*/
+
+/*large devices: 992>*/
+
+/*medium devices: 767>*/
+@media (min-width: 767px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .section {
+    padding: 10rem 0;
+  }
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    height: 3.125rem;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  #home .image {
+    order: 1;
+  }
+  #home .image img,
+  #about .image img {
+    width: 25rem;
+    height: 17.5rem;
+    object-fit: cover;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+}

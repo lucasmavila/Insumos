@@ -1,0 +1,27 @@
+{
+  "name": "Insumos-1",
+  "version": "1.0.0",
+  "description": "Site da Component",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmavila/Insumos.git"
+  },
+  "keywords": [],
+  "author": "Lucas Ávila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmavila/Insumos/issues"
+  },
+  "homepage": "https://github.com/lucasmavila/Insumos#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
